@@ -1,2 +1,2 @@
-# dio-desafio-github
+# DIO Project: My first repository
 Repository created to track my progress and evolution in the web development area, a DIO project using Git/Github.
