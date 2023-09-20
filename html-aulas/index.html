@@ -9,44 +9,46 @@
 </head>
 
 <body>
-    <header>
-        <img class="images" src="IMG_9270 (1).jpg" alt="Foto do João Pedro" height="110px" width="110px">
-        <h1 id="title">João Pedro Lima Marcelo</h1>
-        <h2 id="subtitle">Site pessoal</h2>
-        <br>
+    <header class="header">
+        <nav class="nav">
+            <a href="#">Home</a>
+            <a href="#">Sobre</a>
+            <a href="#">Projetos</a>
+            <a href="#">Contato</a>
+        </nav>
+        <div class="search">
+            <input type="text" placeholder="Pesquisar...">
+           <a><i class="fa-solid fa-magnifying-glass"></i></a> 
+        </div>
     </header>
-    <section>
-        <header>
-            <h2 class="subtitle_posts">Posts</h2>
-        </header>
-        <article class="post">
-            <header>
-                <h3 class="post_title">Post #1</h3>
-                <img src="https://gifdb.com/images/high/the-matrix-neo-code-pobehqmcyw1e0c6z.gif"
-                    alt="Foto de Matrix" height="200px" width="400px">
-            </header>
-            <p class="text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>Laudantium magnam quasi expedita
-                assumenda,<br>
-                officiis quis voluptatem officia blanditiis ducimus iure <br>doloribus recusandae sunt architecto
-                distinctio natus nisi <br>numquam rem asperiores. </p>
-        </article>
-    </section>
-    <footer>
-        <br>
-        <h3 id="links">Links</h3>
-        <ul class="text">
-            <li>
-                <a href="mailto:limamarcelojoaopedro@gmail.com" target="_blank">E-mail</a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-lima-6863591b4/" target="_blank">Linkedin</a>
-            </li>
-            <li>
-                <a href="https://github.com/jplimam" target="_blank">GitHub</a>
-            </li>
-        </ul>
-    </footer>
+    <div class="background"></div>
+    <section class="home">
+            <div class="content">
+                <img src="IMG_9270 (1).jpg" alt="Foto do João Pedro" height="110px" width="110px" class="photo">
+                <h1>jplimam</h1>
+                <h2>Site pessoal</h2>
+                <br>
+                <div class="icon">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-github"></i>
+                </div>
+            </div>        
+        <div class="post">
+                <h2 class="post-subtitle">Posts</h2>
+            <article>
+                    <h3 class="post-title">Post I</h3>
+                    <img src="https://gifdb.com/images/high/the-matrix-neo-code-pobehqmcyw1e0c6z.gif"
+                        alt="Foto de Matrix" height="200px" width="400px" class="matrix">
+                <p class="post-content">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>Laudantium magnam quasi expedita
+                    assumenda,<br>
+                    officiis quis voluptatem officia blanditiis ducimus iure <br>doloribus recusandae sunt architecto
+                    distinctio natus nisi <br>numquam rem asperiores. </p>
+            </article>
+        </div> 
+    </section>   
 </body>
 
 </html>

@@ -1,42 +1,188 @@
-body{
-    background-color: #0C170D;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.images {
-    padding-left: 870px;
-    padding-top: 35px;
-    padding-bottom: 35px;
+.background {
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://i.pinimg.com/originals/52/17/a5/5217a5904569d93e3cbd51cabf7041a2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.header {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    z-index: 99;
+    background: transparent;
 }
 
-#title, #links, .post_title, .subtitle_posts {
-    color:#00FF41;
+.header .nav a {
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 25px;
+    margin-left: 5px;
+    font-weight: 650;
+    font-family: mySubtitleFont;
 }
 
-#title {
-    padding-left: 600px;
-    font-size: 50px;
-    margin-top: 0px;
-    margin-bottom: 5px;
-    font-family: 'Courier New', Courier, monospace;
+.header .search input {
+    background: transparent;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px solid antiquewhite;
+    padding-left: 10px;
+    right: 100px;
+    outline: none;
+    color: antiquewhite;
 }
 
-#subtitle {
-    padding-left: 845px;
-    color:#00FF41;
-    margin-top: 0px;
-    font-family: 'Courier New', Courier, monospace;
-
+.header .search i{
+    position: absolute;
+    right: 110px;
+    top: 40px;
+    color: antiquewhite;
 }
 
-.text {
-    font-size: large;
-    color: 	#36ba01;
-    font-family: 'Courier New', Courier, monospace;
+.home {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 75%;
+    height: 75%;
+    transform: translate(-50%, -50%);
+    background-image: url(https://i.pinimg.com/originals/52/17/a5/5217a5904569d93e3cbd51cabf7041a2.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    padding: 100px 0;
+}
+
+.content img {
+    position: relative;
+    text-decoration: none;
+    color: antiquewhite;
+    align-self: center;
+    height: 250px;
+    width: 250px;
+}
+
+.content h1 {
+    font-size: 200px;
+    text-align: center;
+    color: antiquewhite;
+    text-transform: uppercase;
+    font-family: myFont;
+}
+
+.content h2 {
+    font-size: 100px;
+    text-align: center;
+    color: antiquewhite;
+    text-transform: lowercase;
+    font-family: mySubtitleFont;
+    line-height: 40%;
+}
+
+.content .icon {
+    margin-top: 20px;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+}
+
+.content .icon i {
+    margin-left: 20px;
+    color: antiquewhite
+}
+
+
+@font-face {
+    font-family: myFont;
+    src: url(Heading-Pro-Bold-trial.ttf);
+}
+
+@font-face {
+    font-family: mySubtitleFont;
+    src: url(Heading-Pro-Light-trial.ttf);
+}
+
+@font-face {
+    font-family: myContentFont;
+    src: url(Heading-Pro-Thin-trial.ttf);
+}
+
+.photo {
+    margin-top: 40px;
+    border: 5px solid whitesmoke;
+    border-radius: 20%;
+}
+
+.title {
+    font-family: myFont;
+    font-size: 120px;
+    text-transform: uppercase;
+    color: antiquewhite;
+}
+
+.subtitle {
+    font-family: mySubtitleFont;
+    font-size: 60px;
+    text-transform: lowercase;
+    color: antiquewhite;
 }
 
 .post {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #1A1C1A;
+    text-align: center;
+    font-family: myContentFont;
+    max-width: 500px;
+    max-height: 550px;
+    border: 5px solid black;
+    border-radius: 5%;
+    margin: 3% auto;
+    background-color: antiquewhite;
+}
+
+.post-subtitle {
+    font-size: 60px;
+    font-family: mySubtitleFont;
+    margin: 5px;
+}
+
+.matrix {
+    border-radius: 2%;
+}
+
+.post-title {
+    font-size: 35px;
+    margin: 10px;
+    margin-left: 50px;
+    text-align: left;
+}
+
+.post-content {
+    font-size: 22px;
+    text-align:center ;
+    margin-left: 47px;
+    margin-right: 47px;
+    margin-bottom: 49px;
+
 }
